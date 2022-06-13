@@ -21,7 +21,7 @@ h1, h2 {
 .container {
     max-width: 1100px;
     margin: 0 auto;
-    padding: 0 30px;
+    padding: 0 20px;
 }
 ul {
     list-style: none;
@@ -32,7 +32,7 @@ ul {
     font-size: 16px;
     font-weight: bold;
 }
-  .navbar a:hover {
+.navbar a:hover {
     color: lightblue;
 }
 .navbar {
@@ -177,9 +177,20 @@ a:active {
 /* Responsiveness starts here*/
   
 @media (max-width: 768px) {
+    .navbar .container {
+        padding-left:25px;
+        padding-right: 25px;
+    }
+    /* .navbar .container ul {
+        justify-content: center;
+        align-items: center;
+    } */
+    .navbar .container li {
+        margin-left: 15px;
+    }
     .header .container {
       flex-direction: column;
-      padding-top: 20px;
+      padding: 60px 15px 1px 15px;
       text-align: center;
     }
     .header img {
