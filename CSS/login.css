@@ -1,0 +1,141 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    color: white;
+    line-height: 1.5;
+    text-align: center;
+    background: url("/images/contactus.jpeg");
+}
+img {
+    max-width: 100%;
+}
+ul {
+    list-style: none;
+}
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+.navbar a:hover {
+    color: lightblue;
+}
+.navbar {
+    background: teal;
+    color: white;
+    height: 60px;
+}
+.navbar .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+.container .headline {
+    padding-top: 50px;
+}
+.navbar ul {
+    display: flex;
+}
+.navbar ul li {
+    margin-left: 30px;
+}
+.navbar li a{
+    color: white;
+    margin-left: 10px;
+}
+.navbar .logo {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a:hover {
+    background-color: teal;
+}
+a:active {
+    color: slateblue;
+}
+#username {
+    padding: 20px;
+    width: 30%;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+#password {
+    padding: 20px;
+    width: 30%;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+#signin {
+    width: 10%;
+    margin: 20px 0;
+    background-color: teal;
+    padding: 20px;
+    border: 1px solid teal;
+    border-radius: 5px;
+    text-align: center;
+    color: white;
+    font-size: large;
+}
+#passwordreset a{
+    color: white;
+    text-decoration: none;
+}
+#signup {
+    border: 1px solid white;
+    border-radius: 5px;
+    width: 30%;
+    padding: 20px;
+    margin: auto;
+    background-color: white;
+    color: black;
+}
+#signup a{
+    text-decoration: none;
+    color: blue;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    color: teal;
+    margin-top: 160px;
+}
+.getintouch img[src] {
+    width: 40px;
+    height: 30px;
+    padding: 0px 5px;
+}
+.getintouch span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+}
+
+/* Responsiveness starts here*/
+  
+@media (max-width: 768px) {
+    .header .container {
+      flex-direction: column;
+      padding-top: 20px;
+      text-align: center;
+    }
+  
+    .boxes .container {
+      display: block;
+      text-align: center;
+    }
+} 

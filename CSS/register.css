@@ -1,0 +1,162 @@
+html, body {
+    height: 100%;
+    width: 100%;
+}
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: url("/images/contactus.jpeg");
+    color: white;
+    line-height: 1.5;
+    text-align: center;
+}
+img {
+    max-width: 100%;
+}
+.contactpage {
+    padding: 2% 10%;
+    justify-content: center;
+    align-items: center;
+}
+ul {
+    list-style: none;
+}
+.navbar a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+}
+.navbar a:hover {
+    color: lightblue;
+}
+.navbar {
+    background: teal;
+    color: white;
+    height: 60px;
+}
+.navbar .container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+}
+.navbar ul {
+    display: flex;
+}
+  .navbar ul li {
+    margin-left: 30px;
+}
+.navbar li a{
+    color: white;
+    margin-left: 10px;
+}
+.navbar .logo {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container .register {
+    padding-top: 50px;
+}
+a:hover {
+    background-color: teal;
+}
+a:active {
+    color: slateblue;
+}
+#fname {
+    padding: 20px;
+    width: 30%;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+#lname {
+    padding: 20px;
+    width: 30%;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+#phone {
+    padding: 20px;
+    width: 30%;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+.dropdown {
+    width: 25%;
+    margin: 20px 0;
+}
+#state {
+    padding: 20px;
+    width: 30%;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+#country {
+    padding: 20px;
+    width: 30%;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+#username {
+    padding: 20px;
+    width: 30%;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+#password {
+    padding: 20px;
+    width: 30%;
+    margin: 20px 0;
+    border-radius: 5px;
+}
+#submit {
+    width: 10%;
+    margin: 20px 0;
+    background-color: teal;
+    padding: 20px;
+    border: 1px solid teal;
+    border-radius: 5px;
+    color: white;
+}
+.footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    padding: 0px 10%;
+    background-color: white;
+    color: teal;
+}
+.getintouch img[src] {
+    width: 40px;
+    height: 30px;
+    padding: 0px 5px;
+}
+.getintouch span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 5px;
+}
+  
+/* Responsiveness starts here*/
+  
+@media (max-width: 768px) {
+    .header .container {
+      flex-direction: column;
+      padding-top: 20px;
+      text-align: center;
+    }
+  
+    .boxes .container {
+      display: block;
+      text-align: center;
+    }
+} 
