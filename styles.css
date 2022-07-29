@@ -27,36 +27,8 @@ html, body {
     background-image: url(./images/bg-header-mobile.png);
     background-repeat: no-repeat;
 }
-input {
-    padding: 15px;
-    width: 250px;
-    margin: 20px 30px;
-    border: .5px solid teal;
-    border-radius: 5px;
-}
-input::placeholder {
-    color: teal;
-}
-.dropdown {
-    width: 25%;
-    margin: 20px 0;
-    color: teal;
-}
-#message {
-    width: 39%;
-    height: 150px;
-}
-#submit {
-    width: 150px;
-    margin: 20px 0;
-    background-color: var(--Strong-Cyan);
-    padding: 20px;
-    border: 1px solid teal;
-    border-radius: 5px;
-    color: white;
-}
-#submit:hover {
-    background-color: var(--Grayish-Blue);
+h1, h2, h3, h4, p {
+    padding: 0 30px;
 }
 .logo {
     width: 50px;
@@ -70,6 +42,82 @@ input::placeholder {
     width: 50px;
     margin-top: 70px;
     margin-bottom: 20px;
+}
+.banner-image {
+    width: 340px;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+p {
+    font-size: 16px;
+    color: var(--Grayish-Blue);
+    line-height: 25px;
+}
+.q-i-c p {
+    margin-bottom: 50px;
+}
+.access-clip {
+    margin-top: 130px;
+    margin-bottom: 70px;
+}
+.font-inc {
+    font-size: 30px;
+}
+.super-img {
+    margin-top: 50px;
+    width: 350px;
+    height: 250px;
+}
+.super-img:hover {
+    border: 1px solid var(--Strong-Cyan);
+}
+.buttons {
+    margin-top: 30px;
+    margin-bottom: 120px;
+}
+.partner-images {
+    margin: 100px auto;
+}
+.partner-images img[src] {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    margin-top: 60px;
+}
+.clip {
+    font-size: 24px;
+    /* padding: 0 20px; */
+}
+.btn-ios {
+    width: 300px;
+    padding: 13px;
+    background-color: var(--Strong-Cyan);
+    border-radius: 30px;
+    border: 1px solid var(--Strong-Cyan);
+    margin: 20px auto;
+    color: white;
+    font-weight: bolder;
+    box-shadow: 2px 3px rgb(142, 203, 203);
+}
+.btn-ios:hover {
+    cursor: pointer;
+    background-color: rgb(164, 206, 206);
+    border-color: rgb(164, 206, 206);
+}
+.btn-mac {
+    width: 300px;
+    padding: 13px;
+    background-color: var(--Light-Blue);
+    border-radius: 30px;
+    border: 1px solid var(--Light-Blue);
+    color: white;
+    font-weight: bolder;
+    box-shadow: 2px 3px rgb(124, 145, 189);
+}
+.btn-mac:hover {
+    cursor: pointer;
+    background-color: rgb(158, 184, 235);
+    border-color: rgb(158, 184, 235);
 }
 #footer {
     margin-top: 150px;
@@ -96,6 +144,12 @@ input::placeholder {
 }
 #footer .socials img:hover {
     background-color: var(--Strong-Cyan);
+}
+.attribution { 
+    font-size: 10px; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
 }
 
 /* Desktop Styling */
@@ -134,6 +188,48 @@ input::placeholder {
     h1, h2, h3, h4, p {
         text-align: center;
         padding: 0 30%;
+    }
+    .banner-image {
+        width: 600px;
+        margin-top: 50px;
+        margin-bottom: 50px;
+    }
+    .btn-ios {
+        margin-right: 20px;
+    }
+    .split-flex {
+        display: flex;
+        flex-direction: row;
+    }
+    .q-i-c {
+        margin-top: 40px;
+    }
+    .q-i-c h3, .q-i-c p {
+        text-align: left;
+        padding-right: 15%;
+    }
+    .sub-super-class {
+        display: flex;
+        justify-content: space-around;
+        margin: 0 auto;
+    }
+    .super-class {
+        margin: 0 auto;
+        text-align: center;
+        padding: 0;
+    }
+    .sub-super-class p {
+        text-align: center;
+        padding: 0 20%;
+    }
+    .partner-images {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        padding: 1px;
+    }
+    .partner-images img {
+        width: 8%;
     }
     #footer {
         display: flex;

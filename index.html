@@ -4,137 +4,138 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="/CSS/about.css" rel="stylesheet" type="text/css"/>
+    
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>The Deola</title>
+    <script src="main.js"></script>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="container">
-            <div class="logo">
-                <a href="https://Professional-Portfolio.thedeola.repl.co"><img src="images/deola codes.png" alt="deola codes logo"></a>
-            </div>
-            <ul class="nav">
-                <li><a href="/index.html">About</a></li>
+    <main class="container">
+        <nav class="navbar mobile-container">
+            <a href="https://Professional-Portfolio.thedeola.repl.co" download><img src="images/odes.png" alt="deola codes logo" class="logo"></a>
+            <ul class="nav" id="myLinks">
+                <li><a href="index.html">About</a></li>
                 <li><a href="/register.html" target="_blank">Register</a></li>
                 <li><a href="/contact.html" target="_blank">Contact</a></li>
                 <li><a href="/login.html" target="_blank">Log In</a></li>
             </ul>
+        </nav>
+        <div>
+          <img src="./images/odes.png" alt="Clipboard Icon" class="logo-top">
+          <h1>Hi, I am Adeola.</h1>
+          <p>A Front-End Developer</p>
         </div>
-    </nav>
     
-    <header class="header">
-        <div class="container">
+        <div class="buttons">
+          <button type="button" class="btn-ios">Need a Functional Website?</button>
+          <button type="button" class="btn-mac">Need an Experienced Developer?</button>
+        </div>
+    
+        <div>
+          <h2>GOAL</h2>
+          <p>The goal is to deliver excellent user interface to my clients that not only meet, but exceed, their initial vision.<br>Knowing what to expect when we work together is critical - here is how I deliver success:</p>
+          <div class="split-flex">
             <div>
-                <h1>Hi, I am Adeola.</h1>
-                <h1>A Front-End Developer.</h1>
+              <img src="./images/image-computer.png" alt="Computer Image" class="banner-image">
             </div>
-            <div class="banner">
-                <button class="bannerleft">Need a Functional Website?</button>  
-                <h6>Or</h6>
-                <button class="bannerright">Need an Experienced Developer?</button>
+            <div class="q-i-c">
+              <h3>Clean and Functional Interface</h3>
+              <p>Easily search your snippets by content, category, web address, application, and more.</p>
+              <h3>Optimized for Mobile</h3>
+              <p>Instantly saves and syncs snippets across all your devices.</p>
+              <h3>Helpful Navigation</h3>
+              <p>Retrieve any snippets from the first moment you started using the app.</p>
             </div>
+          </div>
         </div>
-    </header>
     
-    <section class="boxes">
-        <div class="container">
-            <div class="goal">
-                <span>_______</span>
-                <div>
-                    <h2>GOAL</h2>
-                    <p>The goal is to deliver excellent user interface to my clients that not only meet, but exceed, their initial vision.<br>Knowing what to expect when we work together is critical - here is how I deliver success:</p>
-                    <div class="flexbox">
-                        <ul class="container">
-                            <div>
-                                <li class="flex-item goals"><img src="/images/goal1.jpg" alt="goal one"></li>
-                                <span id="span">Clean and Functional Interface</span>
-                            </div>
-                            <div>
-                                <li class="flex-item goals"><img src="/images/goal2.jpg" alt="goal two"></li>
-                                <span id="span">Optimized for Mobile</span>
-                            </div>
-                            <div>
-                                <li class="flex-item goals"><img src="/images/goal3.jpg" alt="goal three"></li>
-                                <span id="span">Helpful Navigation</span>
-                            </div>
-                        </ul>
-                    </div>
-                </div>
+        <div class="access-clip">
+          <h2 class="font-inc">EXPERIENCE</h2>
+          <p>Here are a few of my latest projects, I invite you to explore them.</p>
+          <!-- <img src="./images/image-devices.png" alt="Devices" class="banner-image"> -->
+          <div class="split-flex sub-super-class">
+            <div>
+              <img src="./images/phonie.png" alt="blacklists" class="super-img">
+              <h4>Phonie</h4>
+              <p><a href="https://phonie.netlify.app/">View Here</a></p>
             </div>
-                  
-            <br>
-                  
-            <div class="experience">
-                <span>_______</span>
-                <div>
-                    <h2>EXPERIENCE</h2>
-                    <p>Here are a few of my latest projects, I invite you to explore them.</p>
-                    <div class="flexbox">
-                        <ul class="container">
-                            <div>
-                                <li class="flex-item"><img src="/images/thefork.png" alt="thefork project"></li>
-                                <span id="span"><a href="https://theforkpr.netlify.app">View Here</a></span>
-                            </div>
-                            <div>
-                                <li class="flex-item"><img src="/images/kitpro.png" alt="kitpro project"></li>
-                                <span id="span"><a href="https://sbuikitpro.netlify.app">View Here</a></span>
-                            </div>
-                            <div>
-                                <li class="flex-item"><img src="/images/zuora.png" alt="zuora project"></li>
-                                <span id="span"><a href="https://zuora.netlify.app">View Here</a></span>
-                            </div>
-                        </ul>
-                    </div>
-                </div>
+            <div>
+              <img src="./images/sign-in.png" alt="snippets" class="super-img">
+              <h4>Sign In Form</h4>
+              <p><a href="https://intro-sign-up-form-js.netlify.app/">View Here</a></p>
             </div>
-    
-            <br>
-                  
-            <div class="education">
-                <span>_______</span>
-                <div>
-                    <h2>EDUCATION</h2>
-                    <div class="flexbox">
-                        <ul class="container">
-                            <div>
-                                <li class="flex-item goals"><img src="/images/goal1.jpg" alt="goal one"></li>
-                                <span id="span">BSc: Pure & Applied Chemistry</span>
-                            </div>
-                            <div>
-                                <li class="flex-item goals"><img src="/images/goal2.jpg" alt="goal two"></li>
-                                <span id="span">MSc: Marketing Management</span>
-                            </div>
-                            <div>
-                                <li class="flex-item goals"><img src="/images/goal3.jpg" alt="goal three"></li>
-                                <span id="span">W3S, MDN: Software Engineering</span>
-                            </div>
-                        </ul>
-                    </div>
-                </div>
+            <div>
+              <img src="./images/color-flipper.png" alt="preview" class="super-img">
+              <h4>Color Flipper</h4>
+              <p><a href="https://thedeola-color-flipper.netlify.app/">View Here</a></p>
             </div>
-    
-            <br>
-                  
-            <div class="hobbies">
-                    <span>_______</span>
-                <div>
-                    <h2>HOBBIES</h2>
-                    <p>When I'm not coding, I can be found traveling, relaxing with a good TV show, dabbling in random spoken languages.</p>
-                </div>
-            </div>
+          </div>
         </div>
-    </section>
-        
-    <footer class="footer">
-        <div class="getintouch">
-            <span>Get in Touch</span>
+    
+        <div class="super-class">
+          <h2 class="font-inc">EDUCATION</h2>
+          <p>We’ve got the tools to boost your productivity.</p>
+          <div class="split-flex sub-super-class">
+            <div>
+              <img src="./images/dashboard.png" alt="blacklists" class="super-img2">
+              <h4>Pure & Applied Chemistry (BSc.)</h4>
+              <p>Obafemi Awolowo University, Nigeria</p>
+            </div>
+            <div>
+              <img src="./images/projects.png" alt="snippets" class="super-img2">
+              <h4>Marketing Management (MSc.)</h4>
+              <p>University of Derby, United Kingdom</p>
+            </div>
+            <div>
+              <img src="./images/settings.png" alt="preview" class="super-img2">
+              <h4> Software Engineering (Diploma)</h4>
+              <p>Altschool Africa, W3S, MDN (Remote)</p>
+            </div>
+          </div>
+        </div>
+    
+        <!-- <div class="partner-images" class="split-flex">
+          <img src="./images/logo-google.png" alt="Google Logo">
+          <img src="./images/logo-ibm.png" alt="IBM Logo">
+          <img src="./images/logo-microsoft.png" alt="Microsoft Logo">
+          <img src="./images/logo-hp.png" alt="HP Logo">
+          <img src="./images/logo-vector-graphics.png" alt="Vector Graphics">
+        </div> -->
+    
+        <div>
+          <h4 class="clip">HOBBIES</h4>
+          <p>When I'm not coding, I can be found traveling, relaxing with a good TV show, dabbling in random spoken languages.</p>
+          <div class="bottom-buttons">
+            <button type="button" class="btn-ios">Need a Functional Website?</button>
+            <button type="button" class="btn-mac">Need an Experienced Developer?</button>
+          </div>
+        </div>
+    
+        <div id="footer" class="split-flex">
+          <div>
+            <img src="./images/odes.png" alt="Clipboard Logo" class="logo-bottom">
+          </div>
+          <div>
+            <p><a href="#">About</a></p>
+            <p><a href="#">Register</a></p>
+          </div>
+          <div>
+            <p><a href="#">FAQs</a></p>
+            <p><a href="#">Contact</a></p>
+          </div>
+          <div>
+            <p><a href="#">Log In</a></p>
+          </div>
+          <div class="socials">
             <a href="mailto:thedeoladollars.com"><img src="/images/mail-icon.png" alt="mailbox"></a>
             <a href="https://github.com/TheDeola"><img src="/images/github-icon.png" alt="github"></a>
             <a href="https://app.netlify.com/teams/thedeola"><img src="/images/netlify-icon.png" alt="netlify"></a>
             <a href="https://www.linkedin.com/in/adeolaadetunji/"><img src="/images/linkedin-icon.jpeg" alt="linkedin"></a>
-            <a href="https://twitter.com/Deolacodes"><img src="/images/twitter-logo.jpeg" alt="twitter"></a>
-            <a href="https://table-calculator.thedeola.repl.co" target="_blank"><img src="/images/calculator-icon.jpg" alt="calculator"></a>
+            <a href="https://twitter.com/Deolacodes"><img src="/images/twitter-icon.jpeg" alt="twitter"></a>
+          </div>
         </div>
-    </footer>
+    </main>
 </body>
 </html>
