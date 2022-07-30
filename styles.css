@@ -14,20 +14,23 @@
 html, body {
     width: 100%;
     height: 100%;
-    margin: 0;
+    margin: 0 auto;
     padding: 0;
     text-align: center;
     color: var(--Dark-Grayish-Blue);
+}
+body {
+    overflow-x: hidden;
+    background-color: rgba(234, 239, 244, 0.4);
 }
 .container {
     width: 375px;
     margin: 0 auto;
     text-align: center;
-    background-image: url(./images/bg-header-mobile.png);
     background-repeat: no-repeat;
 }
 nav {
-    background-color: var(--Strong-Cyan);
+    background-color: teal;
     display: flex;
     justify-content: space-between;
     margin: 0;
@@ -60,7 +63,8 @@ h1, h2, h3, h4, p {
     margin-left: 30px;
 }
 .logo-top {
-    width: 200px;
+    width: 120px;
+    border-radius: 50%;
 }
 .logo-bottom {
     width: 50px;
@@ -146,7 +150,6 @@ p {
 #footer {
     margin-top: 150px;
     background-color: rgba(234, 239, 244, 0.4);
-    background-position: cover;
 }
 #footer a {
     text-decoration: none;
@@ -175,19 +178,39 @@ p {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+div.box {
+    padding: 30px 0;
+}
+.box {
+    background-color: teal;
+    color: white;
+    margin: 50px auto;
+    box-shadow: 2px 4px 5px var(--Strong-Cyan);
+    transform: translateX(400%);
+    transition: transform 0.4s ease;
+}
+.box:nth-of-type(even) {
+    transform: translateX(-400%);
+}
+.box.show {
+    transform: translateX(0);
+}
 
 /* Desktop Styling */
 
 @media screen and (min-width: 600px) {
+    body {
+        overflow-x: hidden;
+        background-color: rgba(234, 239, 244, 0.4);
+    }
     .container {
         margin: 0 auto;
         padding-top: 0;
         width: 100%;
         min-width: 1440px;
-        background-image: url(./images/bg-header-desktop.png);
     }
     nav {
-        background-color: var(--Strong-Cyan);
+        background-color: teal;
         display: flex;
         justify-content: space-between;
         margin: 0;
@@ -270,5 +293,19 @@ p {
     }
     .socials img {
         margin: 10px;
+    }
+    .box {
+        background-color: teal;
+        color: white;
+        margin: 50px auto;
+        box-shadow: 2px 4px 5px var(--Strong-Cyan);
+        transform: translateX(400%);
+        transition: transform 0.4s ease;
+    }
+    .box:nth-of-type(even) {
+        transform: translateX(-400%);
+    }
+    .box.show {
+        transform: translateX(0);
     }
 }

@@ -27,7 +27,7 @@ html, body {
     background-repeat: no-repeat;
 }
 nav {
-    background-color: var(--Strong-Cyan);
+    background-color: teal;
     display: flex;
     justify-content: space-between;
     margin: 0;
@@ -134,7 +134,7 @@ input::placeholder {
         background-image: url(./images/bg-header-desktop.png);
     }
     nav {
-        background-color: var(--Strong-Cyan);
+        background-color: teal;
         display: flex;
         justify-content: space-between;
         margin: 0;
