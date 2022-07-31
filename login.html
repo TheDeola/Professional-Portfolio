@@ -5,7 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CSS/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <title>The Deola</title>
+    <script src="login.js"></script>
 </head>
 <body>
     <main class="container">
@@ -21,27 +23,37 @@
         <section class="header">
             <div class="container">
                 <div class="headline">
-                    <h1>Deola Codes Academy</h1>
+                    <h1>Log In Here</h1>
                     <h6>_________________</h6>
                 </div>
               
-                <form>
-                    <label for="username"></label>
-                    <input type="text" name="username" id="username" placeholder="Username, Email, Phone Number" required><br>
+                <form action="#" class="form" id="form">
+                  <div class="form-control">
+                    <input type="text" name="email" id="email" placeholder="" required>
+                    <label for="email">Email</label>
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <small>Email cannot be empty</small>
+                  </div>
+
+                  <div class="form-control">
+                    <input type="password" name="password" id="password" placeholder="" required>
+                    <label for="password">Password</label>
+                    <i class="fa fa-check-circle"></i>
+                    <i class="fa fa-exclamation-circle"></i>
+                    <small>Password cannot be empty</small>
+                  </div>
+
+                  <button class="btn" id="signin">Log In</button>
         
-                    <label for="password"></label>
-                    <input type="text" name="password" id="password" placeholder="Password" required><br>
-        
-                    <button id="signin">Log In</button>
-        
-                    <h5 id="passwordreset"><a href="#">Forgotten your password?</a></h5>
+                  <h5 id="passwordreset"><a href="#">Forgotten your password?</a></h5>
                 </form>
         
                 <br>
         
                 <br>
         
-                <h5 id="signup">Don't have an account yet? <a href="#">Sign Up</a></h5>
+                <h5 id="signup">Don't have an account yet? <a href="/register.html">Register</a></h5>
             </div>
         </section>
 

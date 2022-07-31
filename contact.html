@@ -28,7 +28,7 @@
           
                     <br>
           
-                    <form>
+                    <form action="#" class="form" id="form">
                         <label for="dropdown" id="dropdown">Message Format: </label>
                         <select class="dropdown">
                             <option>Consultancy</option>
@@ -37,17 +37,22 @@
                         </select>
         
                         <br>
-            
+                      <div class="form-control">
                         <label for="name"></label>
                         <input type="text" name="name" id="name" placeholder="Name" required>
-        
+                      </div>
+
+                      <div class="form-control">
                         <label for="email"></label>
                         <input type="text" name="email" id="email" placeholder="Email" required><br>
-        
+                      </div>
+
+                      <div class="form-control">
                         <label for="message"></label>
                         <input type="text" name="message" id="message" placeholder="Type Your Message" required><br>
-        
-                        <input type="submit" name="submit" id="submit" required>
+                      </div>
+
+                      <input type="submit" name="submit" id="submit" required>
                     </form>
                 </div>
             </div>

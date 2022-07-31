@@ -24,7 +24,6 @@ html, body {
     margin: 0 auto;
     padding: 0;
     text-align: center;
-    background-image: url(./images/bg-header-mobile.png);
     background-repeat: no-repeat;
 }
 nav {
@@ -52,19 +51,16 @@ nav li a {
 li a:hover {
     color: var(--Dark-Grayish-Blue);
 }
-input {
-    padding: 15px;
-    width: 250px;
-    margin: 20px 30px;
+.form {
     border: .5px solid teal;
-    border-radius: 5px;
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    margin: 0 auto;
 }
 #passwordreset a, #signup a{
     text-decoration: none;
     color: var(--Grayish-Blue);
-}
-input::placeholder {
-    color: teal;
 }
 .dropdown {
     width: 25%;
@@ -72,16 +68,21 @@ input::placeholder {
     color: teal;
 }
 #signin {
-    width: 150px;
+    width: 100%;
     margin: 20px 0;
     background-color: var(--Strong-Cyan);
     padding: 20px;
-    border: 1px solid teal;
+    border: 1px solid var(--Strong-Cyan);
     border-radius: 5px;
     color: white;
 }
 #signin:hover {
+    cursor: pointer;
     background-color: var(--Grayish-Blue);
+    transform: scale(0.88);
+}
+#signin:active {
+    transform: scale(0.88);
 }
 .logo {
     width: 50px;
@@ -123,6 +124,70 @@ input::placeholder {
     background-color: var(--Strong-Cyan);
 }
 
+
+/*VALIDATION STYLING CHANGES*/
+
+.form-control>small {
+    position: absolute;
+    color: var(--Red);
+    font-size: 0.65rem;
+    font-style: italic;
+    text-align: right;
+    visibility: hidden;
+}
+.form-control input {
+    padding: 15px 0;
+    width: 100%;
+    margin: 15px auto;
+    border: 0;
+    border-bottom: 1px solid var(--Grayish-Blue);
+    border-radius: 5px;
+    background-color: transparent;
+    color: teal;
+}
+.form input:focus, .form-control input:valid {
+    outline: 0;
+}
+.form-control label {
+    color: var(--Grayish-Blue);
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+.form-control label span {
+    display: inline-block;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.form-control input:focus + label span, 
+.form-control input:valid + label span {
+    transform: translateY(-30px);
+}
+.form-control {
+    position: relative;
+}
+.form-control>i {
+    visibility: hidden;
+    position: absolute;
+}
+.form-control.error input{
+    border-color: red;
+}
+.form-control.error i.fa-exclamation-circle{ 
+    color:rgb(255, 60, 0);
+    /* visibility:visible */
+}
+.form-control.error small{
+    /* visibility: visible; */
+}
+.form-control.success input{
+    border-color: green;
+}
+.form-control.success i.fa-check-circle{
+    color:green;
+    /* visibility:visible */
+}
+
 /* Desktop Styling */
 
 @media screen and (min-width: 600px) {
@@ -131,7 +196,6 @@ input::placeholder {
         padding-top: 0;
         width: 100%;
         min-width: 1440px;
-        background-image: url(./images/bg-header-desktop.png);
     }
     nav {
         background-color: teal;
@@ -159,6 +223,12 @@ input::placeholder {
     h1, h2, h3, h4, p {
         text-align: center;
         padding: 0 30%;
+    }
+    .form {
+        /* background-color: teal; */
+        border-radius: 10px;
+        padding: 30px;
+        width: 50%;
     }
     #footer {
         display: flex;

@@ -51,10 +51,17 @@ nav li a {
 li a:hover {
     color: var(--Dark-Grayish-Blue);
 }
+.form {
+    border: .5px solid teal;
+    border-radius: 10px;
+    padding: 30px;
+    width: 100%;
+    margin: 0 auto;
+}
 input {
     padding: 15px;
-    width: 250px;
-    margin: 20px 30px;
+    width: 100%;
+    margin: 10px auto;
     border: .5px solid teal;
     border-radius: 5px;
 }
@@ -67,7 +74,7 @@ input::placeholder {
     color: teal;
 }
 #submit {
-    width: 150px;
+    width: 100%;
     margin: 20px 0;
     background-color: var(--Strong-Cyan);
     padding: 20px;
@@ -77,6 +84,8 @@ input::placeholder {
 }
 #submit:hover {
     background-color: var(--Grayish-Blue);
+    cursor: pointer;
+    transform: scale(0.88);
 }
 .logo {
     width: 50px;
@@ -123,6 +132,47 @@ input::placeholder {
     background-color: var(--Strong-Cyan);
 }
 
+/*VALIDATION STYLING CHANGES*/
+
+.form-control>small {
+    position: absolute;
+    color: var(--Red);
+    font-size: 0.65rem;
+    font-style: italic;
+    text-align: right;
+    visibility: hidden;
+}
+.form-control input {
+    /* padding: 15px 0; */
+    /* margin: 15px auto; */
+    border: 0;
+    border-bottom: 1px solid var(--Grayish-Blue);
+    border-radius: 5px;
+    background-color: transparent;
+    color: teal;
+}
+.form input:focus, .form-control input:valid {
+    outline: 0;
+}
+.form-control label {
+    color: var(--Grayish-Blue);
+    position: absolute;
+    top: 10px;
+    left: 0;
+}
+.form-control label span {
+    display: inline-block;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.form-control input:focus + label span, 
+.form-control input:valid + label span {
+    transform: translateY(-30px);
+}
+.form-control {
+    position: relative;
+}
+
 /* Desktop Styling */
 
 @media screen and (min-width: 600px) {
@@ -155,6 +205,22 @@ input::placeholder {
     }
     li a:hover {
         color: var(--Dark-Grayish-Blue);
+    }
+    .form {
+        border-radius: 10px;
+        padding: 30px;
+        width: 50%;
+    }
+    .form-control input {
+        width: 40%;
+        margin: 20px;
+    }
+    input {
+        padding: 15px;
+        /* width: 250px; */
+        margin: 20px 30px;
+        border: .5px solid teal;
+        border-radius: 5px;
     }
     h1, h2, h3, h4, p {
         text-align: center;
@@ -201,6 +267,9 @@ input::placeholder {
     }
     .partner-images img {
         width: 8%;
+    }
+    #submit {
+        width: 85%;
     }
     #footer {
         display: flex;

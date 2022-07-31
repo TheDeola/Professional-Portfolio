@@ -24,7 +24,7 @@
                     <h1>Register Now!</h1>
                     <h6>_________________</h6>
                 </div>
-                <form>
+                <form action="#" class="form" id="form">
                     <label for="gender" id="gender">Gender: </label>
                     <select class="dropdown">
                         <option value="Female">Female</option>
@@ -35,32 +35,40 @@
                     </select>
         
                     <br>
-            
+                  <div class="form-control">
                     <label for="fname"></label>
                     <input type="text" name="fname" id="fname" placeholder="First Name" required>
         
+                  
                     <label for="lname"></label>
                     <input type="text" name="lname" id="lname" placeholder="Last Name" required><br>
-        
-                    <label for="phone"></label>
-                    <input type="text" name="phone" id="phone" placeholder="Phone" required>
-        
-                    <label for="state"></label>
-                    <input type="text" name="state" id="state" placeholder="State" required><br>
-        
-                    <label for="country"></label>
-                    <input type="text" name="country" id="country" placeholder="Country" required>
-        
+                  </div>
+
+                  <div class="form-control">
                     <label for="username"></label>
-                    <input type="text" name="username" id="username" placeholder="Username" required><br>
+                    <input type="text" name="username" id="username" placeholder="Username" required>
+                    
+                    <label for="phone"></label>
+                    <input type="text" name="phone" id="phone" placeholder="Phone" required><br>
+                  </div>
+
+                  <div class="form-control">
+                    <label for="state"></label>
+                    <input type="text" name="state" id="state" placeholder="State" required>
+                    
+                    <label for="country"></label>
+                    <input type="text" name="country" id="country" placeholder="Country" required><br>
+                  </div>
+
+                  <div class="form-control">
+                    <label for="password"></label>
+                    <input type="password" name="password" id="password" placeholder="Password" required>
         
                     <label for="password"></label>
-                    <input type="text" name="password" id="password" placeholder="Password" required>
-        
-                    <label for="password"></label>
-                    <input type="text" name="password" id="password" placeholder="Confirm Password" required><br>
-        
-                    <input type="submit" name="submit" id="submit" required>
+                    <input type="password" name="password" id="password" placeholder="Confirm Password" required><br>
+                  </div>
+
+                  <input type="submit" name="submit" id="submit" required>
                 </form>
             </div>
             </section>
