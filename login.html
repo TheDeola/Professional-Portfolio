@@ -11,16 +11,18 @@
 </head>
 <body>
     <main class="container">
-        <nav class="navbar mobile-container">
-            <a href="https://thedeola.netlify.app/" download><img src="images/odes.png" alt="deola codes logo" class="logo"></a>
-            <ul class="nav" id="myLinks">
-                <li><a href="index.html">About</a></li>
-                <li><a href="/register.html" target="_blank">Register</a></li>
-                <li><a href="/contact.html" target="_blank">Contact</a></li>
-                <li><a href="/login.html" target="_blank">Log In</a></li>
-            </ul>
-        </nav>
-        <section class="header">
+      <nav class="navbar header">
+        <a href="https://thedeola.netlify.app/" download><img src="images/odes.png" alt="deola codes logo" class="logo"></a>
+        <input type="checkbox" class="menu-btn" id="menu-btn">
+        <label for="menu-btn" class="menu-icon"><span class="nav-icon"></span></label>
+        <ul class="nav menu">
+          <li><a href="index.html" target="_blank">About</a></li>
+          <li><a href="/register.html" target="_blank">Register</a></li>
+          <li><a href="/contact.html" target="_blank">Contact</a></li>
+          <li><a href="/login.html">Log In</a></li>
+        </ul>
+      </nav>
+      <section>
             <div class="container">
                 <div class="headline">
                     <h1>Log In Here</h1>
@@ -55,9 +57,9 @@
         
                 <h5 id="signup">Don't have an account yet? <a href="/register.html">Register</a></h5>
             </div>
-        </section>
+      </section>
 
-        <div id="footer" class="split-flex">
+      <div id="footer" class="split-flex">
           <div>
             <img src="./images/odes.png" alt="Clipboard Logo" class="logo-bottom">
           </div>
@@ -79,7 +81,7 @@
             <a href="https://www.linkedin.com/in/adeolaadetunji/"><img src="/images/linkedin-icon.jpeg" alt="linkedin"></a>
             <a href="https://twitter.com/Deolacodes"><img src="/images/twitter-icon.jpeg" alt="twitter"></a>
           </div>
-        </div>
+      </div>
     </main>
 </body>
 </html>
