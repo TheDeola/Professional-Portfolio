@@ -1,136 +1,235 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
-    <!-- stylesheet -->
-    <link rel="stylesheet" href="./styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+      crossorigin="anonymous"
+    />
     <title>The Deola</title>
-    <script src="main.js"></script>
-</head>
-<body>
-    <main class="container">
-        <nav class="navbar header">
-          <a href="https://thedeola.netlify.app/" download><img src="images/odes.png" alt="deola codes logo" class="logo"></a>
-          <input type="checkbox" class="menu-btn" id="menu-btn">
-          <label for="menu-btn" class="menu-icon"><span class="nav-icon"></span></label>
-          <ul class="nav menu">
-            <li><a href="index.html">About</a></li>
-            <li><a href="/register.html" target="_blank">Register</a></li>
-            <li><a href="/contact.html" target="_blank">Contact</a></li>
-            <li><a href="/login.html" target="_blank">Log In</a></li>
-          </ul>
-        </nav>
-        <div class="box">
-          <img src="./images/profile-avatar.png" alt="Clipboard Icon" class="logo-top">
-          <h1>Hi, I am Adeola.</h1>
-          <p>A Front-End Developer</p>
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
+  </head>
+  <body>
+    <section id="banner">
+      <img src="./images/odes.png" alt="logo" class="logo">
+      <div class="banner-text">
+        <h1>The Deola</h1>
+        <p>Web Developer</p>
+        <div class="banner-btn">
+          <a href="mailto:aadetunji012@gmail.com"><span></span>Send a Mail</a>
+          <a href="https://drive.google.com/file/d/1HWnaN1kJlijfDuOFXt3LFNCTJ1c0nKGE/view?usp=sharing" download><span></span>Download CV</a>
         </div>
-    
-        <div class="buttons box">
-          <button type="button" class="btn-ios">Need a Functional Website?</button>
-          <button type="button" class="btn-mac">Need an Experienced Developer?</button>
-        </div>
-    
-        <div class="box">
-          <h2>GOAL</h2>
-          <p>The goal is to deliver excellent user interface to my clients that not only meet, but exceed, their initial vision.<br>Knowing what to expect when we work together is critical - here is how I deliver success:</p>
-          <div class="split-flex">
-            <div>
-              <img src="./images/image-computer.png" alt="Computer Image" class="banner-image">
+      </div>
+    </section>
+
+    <div id="sideNav">
+      <nav>
+        <ul>
+          <li><a href="#banner">Home</a></li>
+          <li><a href="#feature">About</a></li>
+          <li><a href="#project">Projects</a></li>
+          <li><a href="#testimonial">Testimonials</a></li>
+          <li><a href="#footer">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <div id="menuBtn">
+      <img src="./images/menu.png" alt="hamburger icon" id="menu" />
+    </div>
+
+    <!-- features -->
+
+    <section id="feature">
+      <div class="title-text">
+        <p>ABOUT</p>
+        <h1>Why Choose Us</h1>
+      </div>
+      <div class="feature-box">
+        <div class="features">
+          <h1>Clean and Functional Interface</h1>
+          <div class="feature-desc">
+            <div class="feature-icon">
+              <i class="fa fa-shield"></i>
             </div>
-            <div class="q-i-c">
-              <h3>Clean and Functional Interface</h3>
-              <p>Easily search your snippets by content, category, web address, application, and more.</p>
-              <h3>Optimized for Mobile</h3>
+            <div class="feature-text">
+              <p>
+                Easily search your snippets by content, category, web address,
+                application, and more.
+              </p>
+            </div>
+          </div>
+
+          <h1>Optimized for Mobile</h1>
+          <div class="feature-desc">
+            <div class="feature-icon">
+              <i class="fa fa-check-square-o"></i>
+            </div>
+            <div class="feature-text">
               <p>Instantly saves and syncs snippets across all your devices.</p>
-              <h3>Helpful Navigation</h3>
-              <p>Retrieve any snippets from the first moment you started using the app.</p>
+            </div>
+          </div>
+
+          <h1>Helpful Navigation</h1>
+          <div class="feature-desc">
+            <div class="feature-icon">
+              <i class="fa fa-inr"></i>
+            </div>
+            <div class="feature-text">
+              <p>
+                Retrieve any snippets from the first moment you started using
+                the app.
+              </p>
             </div>
           </div>
         </div>
-    
-        <div class="access-clip box">
-          <h2 class="font-inc">EXPERIENCE</h2>
-          <p>Here are a few of my latest projects, I invite you to explore them.</p>
-          <!-- <img src="./images/image-devices.png" alt="Devices" class="banner-image"> -->
-          <div class="split-flex sub-super-class">
-            <div>
-              <img src="./images/phonie.png" alt="blacklists" class="super-img">
-              <h4>Phonie</h4>
-              <p><a href="https://phonie.netlify.app/">View Here</a></p>
-            </div>
-            <div>
-              <img src="./images/sign-in.png" alt="snippets" class="super-img">
-              <h4>Sign In Form</h4>
-              <p><a href="https://intro-sign-up-form-js.netlify.app/">View Here</a></p>
-            </div>
-            <div>
-              <img src="./images/color-flipper.png" alt="preview" class="super-img">
-              <h4>Color Flipper</h4>
-              <p><a href="https://thedeola-color-flipper.netlify.app/">View Here</a></p>
-            </div>
+        <div class="features-img">
+            <p>Hi! My name is Deola. I enjoy building websites and web applications. My career in web development started in 2021 shortly after I submitted my MSc dissertation, so I transitioned into the tech space. So far, I've had the privilege to intern at 100Devs, AltSchool Africa. My focus is working with critical thimkers that are able to solve complex tasks into simpler steps and also advocating as well as networking. Currently working with a team on a database management system. Follow me on <a href="https://twitter.com/deolacodes" class="anchor-link">Twitter</a> or checkout out my <a href="https://github.com/TheDeola" class="anchor-link">Github</a> repo. For my full curriculum vitae, visit my <a href="https://www.linkedin.com/in/adeolaadetunji" class="anchor-link">Linkedin</a> profile or download <a href="https://drive.google.com/file/d/1HWnaN1kJlijfDuOFXt3LFNCTJ1c0nKGE/view?usp=sharing" class="anchor-link" download>here</a>.</p>
+          <!-- <img src="./images/barber-man.jpg" alt="" /> -->
+        </div>
+      </div>
+    </section>
+
+    <!-- projects -->
+
+    <section id="project">
+      <div class="title-text">
+        <p>PROJECTS</p>
+        <h1>We Deliver Excellence</h1>
+      </div>
+      <div class="project-box">
+        <div class="single-project">
+          <img src="./images/project-1.png" alt="" />
+          <div class="overlay"></div>
+          <div class="project-desc">
+            <h3>Huddle</h3>
+            <hr />
+            <p>A portfolio website built with Semantic HTML5 markup, CSS custom properties, Flexbox and CSS Grid</p>
+            <a href="https://github.com/TheDeola/huddle-landing-page-with-alternating-feature-blocks-master/blob/master">> Hosted on Github</a>
           </div>
         </div>
-    
-        <div class="super-class box">
-          <h2 class="font-inc">EDUCATION</h2>
-          <p>We’ve got the tools to boost your productivity.</p>
-          <div class="split-flex sub-super-class">
-            <div>
-              <img src="./images/dashboard.png" alt="blacklists" class="super-img2">
-              <h4>Pure & Applied Chemistry (BSc.)</h4>
-              <p>Obafemi Awolowo University, Nigeria</p>
-            </div>
-            <div>
-              <img src="./images/projects.png" alt="snippets" class="super-img2">
-              <h4>Marketing Management (MSc.)</h4>
-              <p>University of Derby, United Kingdom</p>
-            </div>
-            <div>
-              <img src="./images/settings.png" alt="preview" class="super-img2">
-              <h4> Software Engineering (Diploma)</h4>
-              <p>Altschool Africa, W3S, MDN (Remote)</p>
-            </div>
+        <div class="single-project">
+          <img src="./images/project-2.png" alt="" />
+          <div class="overlay"></div>
+          <div class="project-desc">
+            <h3>Manage</h3>
+            <hr />
+            <p>A portfolio website built with Bootstrap framework</p>
+            <a href="https://github.com/TheDeola/manage-landing-page-master">> Hosted on Github</a>
           </div>
         </div>
-    
-        <div class="box">
-          <h4 class="clip">HOBBIES</h4>
-          <p>When I'm not coding, I can be found traveling, relaxing with a good TV show, dabbling in random spoken languages.</p>
-          <div class="bottom-buttons">
-            <button type="button" class="btn-ios">Need a Functional Website?</button>
-            <button type="button" class="btn-mac">Need an Experienced Developer?</button>
+        <div class="single-project">
+          <img src="./images/project-3.png" alt="" />
+          <div class="overlay"></div>
+          <div class="project-desc">
+            <h3>Project Tracker</h3>
+            <hr />
+            <p>A portfolio website built with Semantic HTML5 markup, CSS custom properties, Flexbox and CSS Grid</p>
+            <a href="https://github.com/TheDeola/project-tracking-intro-component-master">> Hosted on Github</a>
           </div>
         </div>
-    
-        <div id="footer" class="split-flex">
-          <div>
-            <img src="./images/odes.png" alt="Clipboard Logo" class="logo-bottom">
-          </div>
-          <div>
-            <p><a href="#">About</a></p>
-            <p><a href="#">Register</a></p>
-          </div>
-          <div>
-            <p><a href="#">FAQs</a></p>
-            <p><a href="#">Contact</a></p>
-          </div>
-          <div>
-            <p><a href="#">Log In</a></p>
-          </div>
-          <div class="socials">
-            <a href="mailto:thedeoladollars.com"><img src="/images/mail-icon.png" alt="mailbox"></a>
-            <a href="https://github.com/TheDeola"><img src="/images/github-icon.png" alt="github"></a>
-            <a href="https://app.netlify.com/teams/thedeola"><img src="/images/netlify-icon.png" alt="netlify"></a>
-            <a href="https://www.linkedin.com/in/adeolaadetunji/"><img src="/images/linkedin-icon.jpeg" alt="linkedin"></a>
-            <a href="https://twitter.com/Deolacodes"><img src="/images/twitter-icon.jpeg" alt="twitter"></a>
+        <div class="single-project">
+          <img src="./images/project-4.png" alt="" />
+          <div class="overlay"></div>
+          <div class="project-desc">
+            <h3>Loopstudios</h3>
+            <hr />
+            <p>A portfolio website built with Semantic HTML5 markup, CSS custom properties, Flexbox and CSS Grid</p>
+            <a href="https://github.com/TheDeola/loopstudios-landing-page-main">> Hosted on Github</a>
           </div>
         </div>
-    </main>
-    <script src="main.js"></script>
-</body>
+      </div>
+    </section>
+
+    <!-- testimonials -->
+
+    <section id="testimonial">
+      <div class="title-text">
+        <p>Testimonials</p>
+        <h1>What Our Client Says</h1>
+      </div>
+      <div class="testimonial-row">
+        <div class="testimonial-col">
+          <div class="user">
+            <img src="./images/img-2.jpg" alt="" />
+            <div class="user-info">
+              <h4>Emeline Lee <i class="fa fa-twitter"></i></h4>
+              <small>@emelee</small>
+            </div>
+          </div>
+          <p>
+            I was looking for a Web professional who would create and evolve my website. <a href="https://twitter.com/deolacodes" class="anchor-link">@deolacodes</a> delivers exactly what I want. It’s always a pleasure working with her. I know she will keep improving my website and advising me in the best ways forward for years to come, with SEO and new features.
+          </p>
+        </div>
+        <div class="testimonial-col">
+            <div class="user">
+              <img src="./images/img-1.jpg" alt="" />
+              <div class="user-info">
+                <h4>Kristine Shai <i class="fa fa-twitter"></i></h4>
+                <small>@kristineshai</small>
+              </div>
+            </div>
+            <p>
+              I first came across <a href="https://twitter.com/deolacodes" class="anchor-link">@deolacodes</a> in my time collaborating with Frontendmentor. Her work ethic, even then, was far beyond what I had come to expect in the industry. Her knowledge of things comes from an insightful angle.
+            </p>
+          </div>
+        <div class="testimonial-col">
+          <div class="user">
+            <img src="./images/img-3.jpg" alt="" />
+            <div class="user-info">
+              <h4>Mark Markens <i class="fa fa-twitter"></i></h4>
+              <small>@markens</small>
+            </div>
+          </div>
+          <p>
+            <a href="https://twitter.com/deolacodes" class="anchor-link">@deolacodes</a> was recommended to me by a mutual friend as a web developer. We discussed my requirements fully before going ahead with anything and she put together a package for me that met all my needs. I never felt pushed or pressured and the whole thing from start to finish was stress free and supportive.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+
+    <section id="footer">
+      <div class="title-text">
+        <p>Contact</p>
+        <h1>Reach Out | Hire Us</h1>
+      </div>
+      <div class="footer-row">
+        <div class="footer-left">
+          <p>Open to job opportunities and collaboration. Send us a mail and we would get back to you as soon as possible</p>
+        </div>
+        <div class="footer-right">
+          <a href="mailto:aadetunji012@gmail.com"><i class="fa fa-envelope-o"></i></a>
+          <a href="https://github.com/TheDeola"><i class="fa fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/adeolaadetunji"><i class="fa fa-linkedin-square"></i></a>
+          <a href="https://twitter.com/deolacodes"><i class="fa fa-twitter"></i></a>
+        </div>
+      </div>
+      <p class="footer-copyright">&copy; copyright 2022 TheDeola</p>
+    </section>
+
+    <script>
+      var menuBtn = document.getElementById("menuBtn");
+      var sideNav = document.getElementById("sideNav");
+      var menu = document.getElementById("menu");
+
+      sideNav.style.right = "-250px";
+
+      menuBtn.onclick = function () {
+        if (sideNav.style.right == "-250px") {
+          sideNav.style.right = "0px";
+          menu.src = "images/close.png";
+        } else {
+          sideNav.style.right = "-250px";
+          menu.src = "images/menu.png";
+        }
+      };
+    </script>
+  </body>
 </html>
