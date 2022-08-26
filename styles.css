@@ -21,7 +21,7 @@
   left: 10%;
   /* filter: invert(1); */
 }
-.banner-text {
+/* .banner-text {
   text-align: center;
   color: #fff;
   padding-top: 180px;
@@ -33,7 +33,7 @@
 .banner-text p {
   font-size: 20px;
   font-style: italic;
-}
+} */
 .banner-btn {
     margin: 70px auto 0;
 }
@@ -102,10 +102,73 @@ nav ul li a {
 section {
     margin: 50px auto;
 }
+.msg-container {
+    width: 600px;
+    height: 380px;
+    position: absolute;
+    left: 25%;
+    top: 57%;
+    transform: translateY(-50%);
+    text-align: center;
+    overflow: hidden;
+}
+#slider {
+    display: inline-flex;
+    transition: 0.5s;
+}
+.msg-col {
+    width: 600px;
+    height: 280px;
+}
+.msg-col h1 {
+    font-size: 130px;
+    color: #fff;
+    font-weight: 300;
+    margin: 10px 0;
+    font-family: "Kaushan Script", cursive;
+}
+.msg-col p { 
+    color: #fff;
+    font-size: 20px;
+    font-style: italic;
+}
+.controller {
+    width: 1px;
+    height: 320px;
+    position: absolute;
+    background: #efefef;
+    display: block;
+    top: 55%;
+    right: 30px;
+    transform: translateY(-50%);
+}
+#line1, #line2, #line3, #line4 {
+    height: 80px;
+    width: 5px;
+    cursor: pointer;
+    transform: translateX(-50%);
+}
+#active {
+    width: 3px;
+    height: 80px;
+    position: absolute;
+    top: 0;
+    border-radius: 10px;
+    background: #fff;
+    transform: translateX(-50%);
+    transition: 0.5s;
+}
 
 @media screen and (max-width: 768px) {
-    .banner-text h1 {
-        font-size: 44px;
+    .msg-container {
+        width: 100%;
+        height: 320px;
+        position: absolute;
+        left: -20%;
+        top: 50%;
+    }
+    .banner-text h1, .msg-col h1 {
+        font-size: 40px;
     }
     .banner-btn a {
         display: block;
@@ -418,6 +481,9 @@ hr {
         font-size: 14px;
     }
     .footer-left p {
+        text-align: center;
+    }
+    .footer-right {
         text-align: center;
     }
 }
